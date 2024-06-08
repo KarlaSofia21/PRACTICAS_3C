@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica Validaciones</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="titulo">Parctica de validaciones</h1>
+        <h2 class="subtitulo">Formulario de registro</h2>
+
+        <form action="" method="get">
+            <label for="nombre">Nombre del empleado </label>
+            <input type="text" name="nombre" id="nombre"
+            class="input" placeholder="Nombre" required
+            maxlength="20">
+
+            <label for="app">Apellido Parterno </label>
+            <input type="text" name="app" id="app"
+            class="input" placeholder="Apellido Paterno" required
+            maxlength="20">
+
+            <label for="apm">Apellido Materno </label>
+            <input type="text" name="apm" id="apm"
+            class="input" placeholder="Apellido Materno" required
+            maxlength="20">
+
+            <label for="fch">Fecha de nacimiento</label>
+            <input type="date" class="input" required 
+            max="2006-01-01">
+
+            <label for="email">Email</label>
+            <input type="email" class="input" placeholder="Email"
+            required maxlength="30">
+
+            <label for="pass">Password</label>
+            <input type="password" name="pass" id="pass" required
+            maxlength="15" minlength="8" class="input"
+            placeholder="Password">
+
+            <label for="pass2">Confirmar Password</label>
+            <input type="password" name="pass2" id="pass2" required
+            maxlength="15" minlength="8" class="input"
+            placeholder="Confirmar password">
+
+            <input type="submit" class="boton" onclick="confirma()">
+        </form>
+
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
